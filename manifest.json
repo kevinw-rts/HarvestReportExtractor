@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Harvest Time Tracker Report Downloader",
+  "version": "1.0",
+  "description": "Download time reports from Harvest with selected columns",
+  "permissions": ["downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://*.harvestapp.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
