@@ -15,12 +15,12 @@ function extractTimeReport() {
   rows.forEach((row) => {
     let columns = row.querySelectorAll("td");
     let rowData = {
-      date: columns[0].innerText, // Assuming Date is in the first column
-      task: columns[4].innerText, // Assuming Task is in the fifth column
-      notes: columns[5].innerText, // Assuming Notes is in the sixth column
-      hours: columns[6].innerText, // Assuming Hours is in the seventh column
-      firstName: columns[10].innerText, // Assuming First Name is in the eleventh column
-      lastName: columns[11].innerText, // Assuming Last Name is in the twelfth column
+      date: columns[0].innerText,
+      task: columns[4].innerText,
+      notes: columns[5].innerText,
+      hours: columns[6].innerText,
+      firstName: columns[10].innerText,
+      lastName: columns[11].innerText,
     };
     reportData.push(rowData);
   });
